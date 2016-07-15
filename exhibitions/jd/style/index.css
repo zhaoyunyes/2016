@@ -1,0 +1,91 @@
+.wrapper {
+	position: relative;
+	width: 1212px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-top {
+	height: 30px;
+	font-size: 12px;
+	background-color: #f1f1f1;
+}
+
+.nav-top .send-to-box {
+
+}
+
+.nav-top .send-to-target {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: -1px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nav-top .send-to-target i {
+	display: inline-block;
+	position: relative;
+	height: 6px;
+	width: 12px;
+	overflow: hidden;
+}
+
+.nav-top .send-to-target i span {
+	position: absolute;
+	left: 0;
+	top: -5px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.nav-top .send-to-item-layer {
+	display: none;
+	width: 300px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.nav-top .send-to-item-layer ul li {
+	display: inline-block;
+	width: 55px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+}
+.nav-top .send-to-item-layer ul li a {
+	display: inline-block;
+	padding: 4px 6px;
+}
+
+.nav-top .send-to-item-layer ul li a.selected, .nav-top .send-to-item-layer ul li a.selected:hover {
+	color: #fff;
+	background-color: #c81623;
+}
+
+.nav-top .send-to-item-layer ul li a:hover {
+	background-color: #ddd;
+}
+
+.nav-top .send-to-box.hover .send-to-item-layer {
+	display: block;
+}
+
+.nav-top .send-to-box.hover .send-to-target {
+	height: 29px;
+	line-height: 29px;
+	padding-left: 9px;
+	padding-right: 9px;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	background-color: #fff
+}
+
+.nav-top .send-to-box.hover .send-to-target i span {
+	top: 0;
+}
