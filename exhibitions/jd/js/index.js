@@ -4,7 +4,7 @@ $(function() {
 	 * 当鼠标移入的时候,添加hover样式类
 	 * 当鼠标移出的时候,移除hover样式类
 	 */
-	$(".send-to-box").hover(function() {
+	$(".dropdown-layer-title").hover(function() {
 		$(this).addClass("hover");
 	}, function() {
 		$(this).removeClass("hover");
