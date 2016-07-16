@@ -145,11 +145,22 @@ a:hover {
   line-height: 0;
 }
 .clear {
+  display: block;
+  overflow: hidden;
   clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
 }
 .hide {
   display: none;
 }
 .show {
   display: block;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }

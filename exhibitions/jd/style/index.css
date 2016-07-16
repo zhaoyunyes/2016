@@ -5,14 +5,24 @@
 	margin-right: auto;
 }
 
+/*颜色*/
+.color-red, .color-red:hover {
+	color: #c81623;
+}
+
+.hover-color-red:hover {
+	color: #c81623;
+}
+/*颜色 end*/
+
+/*图标*/
+/*图标 end*/
+
 .nav-top {
 	height: 30px;
 	font-size: 12px;
+	color: #666;
 	background-color: #f1f1f1;
-}
-
-.nav-top .send-to-box {
-
 }
 
 .nav-top .send-to-target {
@@ -24,7 +34,7 @@
 	padding-right: 10px;
 }
 
-.nav-top .send-to-target i {
+.nav-top .font-icon-arrow {
 	display: inline-block;
 	position: relative;
 	height: 6px;
@@ -32,7 +42,7 @@
 	overflow: hidden;
 }
 
-.nav-top .send-to-target i span {
+.nav-top .font-icon-arrow span {
 	position: absolute;
 	left: 0;
 	top: -5px;
@@ -56,14 +66,16 @@
 	width: 55px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden; 
+	overflow: hidden;
 }
+
 .nav-top .send-to-item-layer ul li a {
 	display: inline-block;
 	padding: 4px 6px;
 }
 
-.nav-top .send-to-item-layer ul li a.selected, .nav-top .send-to-item-layer ul li a.selected:hover {
+.nav-top .send-to-item-layer ul li a.selected,
+.nav-top .send-to-item-layer ul li a.selected:hover {
 	color: #fff;
 	background-color: #c81623;
 }
@@ -86,6 +98,27 @@
 	background-color: #fff
 }
 
-.nav-top .send-to-box.hover .send-to-target i span {
+.nav-top .send-to-box.hover .font-icon-arrow span {
 	top: 0;
+}
+
+.nav-top .nav-item-box {
+	height: 30px;
+}
+
+.nav-top .nav-item-box>li {
+	float: left;
+	margin-left: 8px;
+}
+
+.nav-top .nav-item-box>li.separate {
+	width: 1px;
+	height: 12px;
+	margin-top: 9px;
+	background-color: #ddd;
+	overflow: hidden;
+}
+
+.nav-top .nav-item-box li>a {
+	line-height: 30px;
 }
