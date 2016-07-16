@@ -16,7 +16,50 @@
 /*颜色 end*/
 
 /*图标*/
+.icon {
+	display: inline-block;
+	overflow: hidden;
+}
+.icon-phone {
+	width: 15px;
+	height: 20px;
+	background: url(../images/shopping_cart.png) 0 0 no-repeat;
+}
+.font-icon-arrow {
+	display: inline-block;
+	position: relative;
+	height: 6px;
+	width: 12px;
+	overflow: hidden;
+}
+.font-icon-arrow span {
+	position: absolute;
+	left: 0;
+	top: -6px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+}
 /*图标 end*/
+
+/*公用hover*/
+.dropdown-layer-title {
+	position: relative;
+}
+.dropdown-layer {
+	position: absolute;
+	left: 0;
+}
+.nav-top .dropdown-layer {
+	top: 30px;
+}
+.dropdown-layer-title.hover .dropdown-layer{
+	display: block;
+}
+.dropdown-layer-title.hover .font-icon-arrow span {
+	top: 0;
+}
+/*公用hover end*/
 
 .nav-top {
 	height: 30px;
@@ -32,23 +75,6 @@
 	margin-bottom: -1px;
 	padding-left: 10px;
 	padding-right: 10px;
-}
-
-.nav-top .font-icon-arrow {
-	display: inline-block;
-	position: relative;
-	height: 6px;
-	width: 12px;
-	overflow: hidden;
-}
-
-.nav-top .font-icon-arrow span {
-	position: absolute;
-	left: 0;
-	top: -5px;
-	display: inline-block;
-	font-size: 12px;
-	line-height: 12px;
 }
 
 .nav-top .send-to-item-layer {
@@ -98,10 +124,6 @@
 	background-color: #fff
 }
 
-.nav-top .send-to-box.hover .font-icon-arrow span {
-	top: 0;
-}
-
 .nav-top .nav-item-box {
 	height: 30px;
 }
@@ -121,4 +143,12 @@
 
 .nav-top .nav-item-box li>a {
 	line-height: 30px;
+}
+
+.nav-top .nav-item-box li.mobile-Jingdong .icon-phone {
+	margin-bottom: -5px;
+}
+
+.myinfo-layer {
+	width: 280px;
 }
